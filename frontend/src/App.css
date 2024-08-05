@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@1,300&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  background-image:  url("./background.png");
+  background-size: cover;
+  background-position: center;
+  color: black
+}
