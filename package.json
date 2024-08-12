@@ -2,10 +2,11 @@
   "name": "talk-a-tive",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "Server.js",
+  
   "scripts": {
-    "start": "node backend/server.js",
-    "server": "nodemon backend/server.js",
+    "start": "node backend/Server.js",
+    "server": "nodemon backend/Server.js",
     "build": "npm install --legacy-peer-deps && npm install --legacy-peer-deps --prefix frontend && npm run build --prefix frontend"
   },
   "author": "",
@@ -23,5 +24,10 @@
     "morgan": "^1.10.0",
     "nodemon": "^3.1.4",
     "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.8",
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3"
   }
 }
