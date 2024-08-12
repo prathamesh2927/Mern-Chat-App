@@ -65,4 +65,10 @@ const allUsers = asyncHandler(async (req, res) => {
   const users = await User.find(keyword).find({ _id: { $ne: req.user._id } });
   res.send(users);
 });
-module.exports = { registerUser, authUser, allUsers };
+
+const userAuth = (req, res) => {
+  // If the protect middleware has passed, we know the user is authenticated
+  res.status(200).json({ ok: true });
+};
+
+module.exports = { registerUser, authUser, allUsers, userAuth };
