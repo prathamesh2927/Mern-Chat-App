@@ -95,7 +95,7 @@ const createGroupChat = asyncHandler(async (req, res) => {
 
     res.status(200).json(fullGroupChat);
   } catch (error) {
-    console.log(error);
+    console.log("error", error);
     res.status(400);
     throw new Error(error.message);
   }
