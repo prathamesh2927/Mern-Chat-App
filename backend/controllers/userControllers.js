@@ -79,7 +79,8 @@ const allUsers = asyncHandler(async (req, res) => {
 });
 
 const userAuth = (req, res) => {
-  // If the protect middleware has passed, we know the user is authenticated
+console.log(error);
+
   res.status(200).json({ ok: true });
 };
 
