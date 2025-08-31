@@ -28,9 +28,9 @@ const Login = () => {
     setLoading(true);
     if (!email || !password) {
       toast({
-        title: "Please Fill all the Feilds",
-        status: "warning",
-        duration: 5000,
+        title: "Please Fill all  requird  Feilds to login",
+        status: "error",
+        duration: 7000,
         isClosable: true,
         position: "bottom",
       });
