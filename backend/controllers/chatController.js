@@ -47,6 +47,7 @@ const accessChat = asyncHandler(async (req, res) => {
   }
 });
 
+// Controller: fetch all chats for logged-in user
 const fetchChats = asyncHandler(async (req, res) => {
   try {
     Chat.find({ users: { $elemMatch: { $eq: req.user._id } } })
@@ -66,6 +67,7 @@ const fetchChats = asyncHandler(async (req, res) => {
     throw new Error(error.message);
   }
 });
+
 
 const createGroupChat = asyncHandler(async (req, res) => {
   if (!req.body.users || !req.body.name) {
